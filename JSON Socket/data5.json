@@ -1,0 +1,53 @@
+{
+    "navbar": {
+      "logo": "immagini/Schermata del 2024-12-03 09-04-08.png",
+      "links": [
+        {
+          "text": "Homepage",
+          "href": "index2.html"
+        },
+        {
+          "text": "Socket",
+          "href": "socket.html"
+        },
+        {
+          "text": "Modello OSI",
+          "href": "sistemi.html"
+        },
+        {
+          "text": "Informatica",
+          "href": "informatica.html"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "title": "Socket:",
+        "text": "Interfaccia che permette la comunicazione tra due entità, generalmente processi o programmi, su una rete."
+      },
+      {
+        "title": "Modello OSI:",
+        "text": "Il Modello OSI (Open Systems Interconnection) è un modello di riferimento standardizzato, sviluppato dall'ISO (International Organization for Standardization), che descrive come i dati vengono trasmessi su una rete di telecomunicazioni."
+      },
+      {
+        "title": "TCP:",
+        "text": "TCP (Transmission Control Protocol) è uno dei principali protocolli utilizzati per la comunicazione su reti basate su IP (Internet Protocol). È progettato per fornire una trasmissione di dati affidabile, ordinata e senza errori tra due dispositivi."
+      },
+      {
+        "title": "Client:",
+        "text": "Un client è un dispositivo o un programma che invia richieste a un server per ottenere servizi o risorse. Nel contesto delle reti, il client è la parte di un'architettura client-server, dove il server fornisce i servizi e il client li utilizza."
+      },
+      {
+        "title": "Server:",
+        "text": "Un server è un dispositivo o programma che fornisce servizi, risorse o dati ad altri dispositivi, chiamati client, attraverso una rete. In un'architettura client-server, il server riceve richieste dai client, le elabora e invia una risposta."
+      },
+      {
+        "title": "UDP:",
+        "text": "UDP (User Datagram Protocol) è un protocollo di trasporto utilizzato nelle reti per la trasmissione di dati. A differenza di TCP, UDP è senza connessione e non garantisce l'affidabilità dei dati, ma offre una comunicazione più veloce e con minor overhead."
+      }
+    ],
+    "footer": {
+      "text": "SocketLand diritti riservati - Produzione Autonoma - 5E"
+    }
+  }
+  

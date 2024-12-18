@@ -1,0 +1,59 @@
+{
+    "navbar": {
+      "logo": "immagini/Schermata del 2024-12-03 09-04-08.png",
+      "links": [
+        { "text": "HomePage", "href": "index2.html" },
+        { "text": "Socket", "href": "socket.html" },
+        { "text": "Informatica", "href": "informatica.html" },
+        { "text": "Glossario", "href": "glossario.html" }
+      ]
+    },
+    "hero": {
+      "title": "Modello OSI e il livello di trasporto",
+      "text": "Le socket operano principalmente al livello di trasporto del modello OSI (Open Systems Interconnection). Questo livello è responsabile della gestione della comunicazione end-to-end tra dispositivi. I due principali protocolli utilizzati dalle socket sono:\n<ul>\n  <li>TCP: Orientato alla connessione, garantisce l'affidabilità del trasferimento.</li>\n  <li>UDP: Non orientato alla connessione, offre velocità ma non garantisce l'ordine o la consegna dei pacchetti.</li>\n</ul>",
+      "image": "immagini/TCP.gif"
+    },
+    "sections": [
+      {
+        "title": "Il Modello Iso/Osi",
+        "text": "Il modello ISO/OSI, concepito per reti di telecomunicazioni a commutazione di pacchetto, è costituito da una pila (o stack) di protocolli attraverso i quali viene ridotta la complessità implementativa di un sistema di comunicazione per il networking. In particolare ISO/OSI è costituito da strati (o livelli), i cosiddetti layer, che definiscono e racchiudono in sé a livello logico uno o più aspetti fra loro correlati della comunicazione fra due nodi di una rete. I layer sono in totale e vanno dal livello fisico (quello del mezzo fisico, ossia del cavo, delle onde radio, fibra ottica o qualsiasi altro sistema trasmissivo) fino al livello delle applicazioni, attraverso cui si realizza la comunicazione di alto livello.",
+        "image": "immagini/Lan.jpg",
+        "imagePosition": "right"
+      },
+      {
+        "title": "Il Livello Di Trasposto",
+        "text": "Il livello di trasporto, nell'ambito delle reti, è il quarto dei livelli nel modello ISO/OSI. Il suo compito è di fornire servizi al soprastante livello 5 (livello sessione) e per raggiungere tale scopo sfrutta i servizi offerti dal sottostante livello 3 (livello rete). Lo scopo del livello di trasporto è fornire un canale logico di comunicazione end-to-end per pacchetti.",
+        "image": "immagini/IsoOsi.jpg",
+        "imagePosition": "left"
+      },
+      {
+        "title": "Funzionalità del livello di trasporto",
+        "accordion": [
+          {
+            "title": "Servizio orientato alla connessione:",
+            "text": "In genere il livello rete non stabilisce una connessione persistente verso l'host di destinazione. Il livello di trasporto si incarica, quindi, di realizzare una connessione persistente che viene poi chiusa quando non è più necessaria."
+          },
+          {
+            "title": "Corretto ordine di consegna:",
+            "text": "Poiché i pacchetti possono seguire percorsi diversi all'interno della rete, non c'è alcuna garanzia che i dati vengano recapitati nello stesso ordine in cui sono stati inviati. Il livello di trasporto verifica che i pacchetti vengano riordinati nella giusta sequenza in ricezione prima di passarli al livello superiore."
+          },
+          {
+            "title": "Trasferimento affidabile:",
+            "text": "Il protocollo si occupa di garantire che tutti i dati inviati vengano ricevuti; nel caso il servizio di rete utilizzato perda pacchetti, il protocollo di trasporto si occupa di ritrasmetterli al mittente sotto forma di file corrotti."
+          },
+          {
+            "title": "Controllo Di Flusso",
+            "text": "Se gli host coinvolti nella comunicazione hanno prestazioni molto differenti può capitare che un pc più veloce 'inondi' di dati uno più lento portando alla perdita di pacchetti. Mediante il controllo di flusso, un host in 'difficoltà' può chiedere di abbassare il tasso di trasmissione in modo da poter gestire le informazioni in ingresso."
+          },
+          {
+            "title": "Controllo Della Congestione:",
+            "text": "Il protocollo riconosce uno stato di congestione della rete e adatta di conseguenza la velocità di trasmissione."
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "text": "Nome Cognome - Classe"
+    }
+  }
+  

@@ -1,0 +1,44 @@
+{
+    "navbar": {
+      "logo": "immagini/Schermata del 2024-12-03 09-04-08.png",
+      "links": [
+        { "text": "HomePage", "href": "index2.html" },
+        { "text": "Modello OSI", "href": "sistemi.html" },
+        { "text": "Socket", "href": "socket.html" }
+      ]
+    },
+    "hero": {
+      "title": "TCP e Socket",
+      "image": "immagini/TCP.gif"
+    },
+    "sections": [
+      {
+        "title": "Funzione Connect",
+        "text": "La funzione connect() è usata dal client TCP per stabilire la connessione con un server TCP. int connect (int socketfd, const struct sockaddr *servaddr, socklen_t addrlen); restituisce 0 se la connessione viene stabilita, -1 in caso di errore.",
+        "image": "immagini/connect.jpg",
+        "imagePosition": "left"
+      },
+      {
+        "title": "Funzione Bind",
+        "text": "La funzione bind() collega al socket un indirizzo locale. Per TCP e UDP ciò significa assegnare un indirizzo IP ed una porta a 16-bit. int bind (int sockfd, const struct sockaddr *myaddr, socklen_t addrlen); restituisce 0 se tutto OK, -1 in caso di errore.",
+        "image": "immagini/tcpSocket.jpg",
+        "imagePosition": "right"
+      },
+      {
+        "title": "Funzione Listen",
+        "text": "La funzione listen è chiamata solo dal TCP server e esegue due azioni: <ul><li>ordina al kernel di far passare il socket dallo stato iniziale CLOSED allo stato LISTEN, e di accettare richieste di inizio connessione per quel socket, accodandole in delle code del kernel.</li><li>specifica al kernel quante richieste di inizio connessione può accodare al massimo per quel socket. int listen (int socketfd, int backlog); restituisce 0 se tutto OK, -1 in caso di errore.</li></ul>",
+        "image": "immagini/Ascolto.jpg",
+        "imagePosition": "left"
+      },
+      {
+        "title": "Funzione Accept",
+        "text": "La funzione accept è chiamata solo dal TCP server e restituisce la prima entry nella coda delle connessioni già completate per quel socket. Se la coda è vuota la accept resta in attesa. int accept (int socketfd, struct sockaddr *cli_addr, socklen_t *ptraddrlen); restituisce un descrittore socket >=0 se tutto OK, -1 in caso di errore.",
+        "image": "immagini/accept.jpg",
+        "imagePosition": "right"
+      }
+    ],
+    "footer": {
+      "text": "Nome Cognome - Classe"
+    }
+  }
+  

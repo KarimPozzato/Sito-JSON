@@ -1,0 +1,34 @@
+{
+    "navbar": {
+        "logo": { "src": "immagini/Schermata del 2024-12-03 09-04-08.png", "alt": "Logo" },
+        "links": [
+            { "text": "HomePage", "href": "index2.html" },
+            { "text": "Modello OSI", "href": "sistemi.html" },
+            { "text": "Informatica", "href": "informatica.html" }
+        ]
+    },
+    "hero_section": {
+        "heading": "Scopri le Socket",
+        "cta": { "text": "Vai alla sezione", "href": "#sezione-sotto" },
+        "image": { "src": "immagini/codice.jpg", "alt": "Hero Image" }
+    },
+    "content_sections": [
+        {
+            "heading": "Cos'è una Socket?",
+            "text": [
+                "Una socket è un punto finale per una comunicazione bidirezionale tra due processi.",
+                "Ogni socket è identificata da due elementi principali:"
+            ],
+            "image": { "src": "immagini/socket.jpg", "alt": "Socket Image", "class": "img-fluid" }
+        },
+        {
+            "heading": "Tipologie di socket",
+            "text": [
+                "Le socket possono essere suddivise principalmente in due categorie:",
+                "Socket Stream (TCP): Utilizzano il protocollo TCP e garantiscono una comunicazione affidabile."
+            ],
+            "image": { "src": "immagini/tipologie.jpg", "alt": "Tipologie Image", "class": "img-fluid" }
+        }
+    ],
+    "footer": { "text": "Nome Cognome - Classe" }
+}
